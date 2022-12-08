@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#interface{
+    width: 20%;
+    height: 60%;
+    background-color: rgb(109, 98, 96);
+    
+}
+#interface #container{
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "d d d d"
+                        "s_um s_um s_um s_um"
+                        "s_dois s_dois s_dois s_dois"
+                        "s_tres s_tres s_tres s_tres"
+                        "s_quatro s_quatro s_quatro butt_resultado"
+                        "s_cinco s_cinco s_cinco butt_resultado"
+                        ;
+    
+}
+#interface #container #display{
+   grid-area: d;
+   padding: 5px 3px;
+   display: flex;
+   justify-content: center;
+}
+#interface #container #display input#painel_interno{
+    width: 90%;
+    height: 100%;
+    border: 1px solid white;
+    font-size: 1.5rem;
+ }
+#interface #container section.linhas{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 2px;
+ }
+ /*grid areas de cada section*/
+ #interface #container section#um{
+    grid-area: s_um;
+ }
+ #interface #container section#dois{
+    grid-area: s_dois;
+ }
+ #interface #container section#tres{
+    grid-area: s_tres;
+ }
+ #interface #container section#quatro{
+    grid-area: s_quatro;
+ }
+ #interface #container section#cinco{
+    grid-area: s_cinco;
+ }
+ /*botoes especias*/
+ #interface #container section#um .ep, section#cinco .ep{
+    min-width: 65px;
+    margin: 2px 2px;
+ }
+ #interface #container #butt_resultado{
+    grid-area: butt_resultado;
+    margin: 2px 2px;
+ }
+ /*formatacoes gerais*/
+ #interface #container section.linhas .butt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }

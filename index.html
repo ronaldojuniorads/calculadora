@@ -1,0 +1,54 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+
+
+    <div id="interface">
+        <div id="container">
+            <div id="display"> 
+                <input type="text" id="painel_interno" readonly onkeyup="(teclado()" >
+
+            </div>
+            <section id="um" class="linhas">
+                <button id="clear" class="ep" onclick="caucular('acao', 'c')">C</button>
+                <button id="/" class="butt" onclick="caucular('acao', '/')">/</button>
+                <button id="x" class="butt" onclick="caucular('acao', '*')">x</button>
+            </section>
+            <section id="dois" class="linhas">
+                <button class="butt" onclick="caucular('numero', 7)">7</button>
+                <button class="butt" onclick="caucular('numero', 8)">8</button>
+                <button class="butt" onclick="caucular('numero', 9)">9</button>
+                <button id="-" class="butt" onclick="caucular('acao', '-')">-</button>
+            </section>
+            <section id="tres" class="linhas">
+                <button class="butt" onclick="caucular('numero', 4)">4</button>
+                <button class="butt" onclick="caucular('numero', 5)">5</button>
+                <button class="butt" onclick="caucular('numero', 6)">6</button>
+                <button id="+" class="butt" onclick="caucular('acao', '+')">+</button>
+            </section>
+            <section id="quatro" class="linhas">
+                <button class="butt" onclick="caucular('numero', 1)">1</button>
+                <button class="butt" onclick="caucular('numero', 2)">2</button>
+                <button class="butt" onclick="caucular('numero', 3)">3</button>
+                
+            </section>
+            <section id="cinco" class="linhas">
+                <button class="ep" class="butt" onclick="caucular('numero', 0)">0</button>
+                <button class="butt" onclick="caucular('acao', '.')">.</button>                
+            </section>
+            <button id="butt_resultado" class="butt" onclick="caucular('acao', '=')">=</button>
+        </div>
+
+    </div>
+</main>
+    <!--script-->
+    <script src="my_javascript.js"></script>
+    
+</body>
+</html>
